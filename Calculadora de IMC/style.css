@@ -14,8 +14,16 @@
     --cor5: #023535;        
 }
 
+section {
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
 main {
-    margin: 100px auto;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 400px;
     height: 500px;
     border-radius: 20px;
