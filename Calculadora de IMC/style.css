@@ -13,3 +13,80 @@
     --cor4: #0CABA8;
     --cor5: #0FC2C0;
 }
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+main {
+    background-color: var(--cor5);
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+header > hr {
+    background-color: black;
+    height: 2px;
+    border: none;
+    width: 500px;
+}
+
+nav {
+    padding: 20px;
+}
+
+div.inputs {
+    margin: 20px;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    margin: 15px 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input#botao:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 1px 1px 5px black;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div#resultado {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+p#texto {
+    color: white;
+    font-size: 1em;
+    padding: 20px;
+}

@@ -13,25 +13,26 @@
             <hr>
         </header>
         <nav class="container">
-            <div id="nome">
+            <div class="inputs" id="nome">
                 <label for="idnome">Nome: </label>
-                <input type="text" name="nome" id="idnome" required>
+                <input type="text" name="nome" id="idnome" required placeholder="Insira Aqui">
             </div>
-            <div id="altura">
+            <div class="inputs" id="altura">
                 <label for="idaltura">Altura: </label>
-                <input type="text" name="altura" id="idaltura">
+                <input type="number" name="altura" id="idaltura" required placeholder="Insira Aqui" step="0.01">
             </div>
-            <div id="peso">
+            <div class="inputs" id="peso">
                 <label for="idpeso">Peso: </label>
-                <input type="text" name="peso" id="idpeso">
+                <input type="number" name="peso" id="idpeso" required placeholder="Insira Aqui" step="0.01">
             </div>
             <div id="botão">
-                <input type="button" value="Calcular" onclick="Calcular()">
+                <input type="button" value="Calcular" id="botao">
             </div>
             <div id="resultado">
-                
+                <p id="texto"></p>
             </div>
         </nav>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
