@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen">
 </head>
 <body>
-    <section>
-        <main>
-            <div id="title">
-                <h1>Calculadora de IMC</h1>
-                <hr>
+    <main>
+        <header>
+            <h1>Calculadora - IMC</h1>
+            <hr>
+        </header>
+        <nav class="container">
+            <div id="nome">
+                <label for="idnome">Nome: </label>
+                <input type="text" name="nome" id="idnome" required>
             </div>
-            <nav>
-                <div class="input">
-                    <label for="">Nome:</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <div class="input">
-                    <label for="">Altura:</label>
-                    <input type="text" name="altura" id="altura">
-                </div>
-                <div class="input">
-                    <label for="">Peso:</label>
-                    <input type="text" name="peso" id="peso">
-                </div>
-            </nav>
-            <button id="calcular">Calcular</button>
-            <div class="resultado" id="resultado"></div>
-        </main>
-    </section>
-    <script src="script.js"></script>
+            <div id="altura">
+                <label for="idaltura">Altura: </label>
+                <input type="text" name="altura" id="idaltura">
+            </div>
+            <div id="peso">
+                <label for="idpeso">Peso: </label>
+                <input type="text" name="peso" id="idpeso">
+            </div>
+            <div id="botão">
+                <input type="button" value="Calcular" onclick="Calcular()">
+            </div>
+            <div id="resultado">
+                
+            </div>
+        </nav>
+    </main>
 </body>
 </html>
