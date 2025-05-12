@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Lojinha</h1>
+    </header>
+    <main>
+        <nav>
+            <section>
+                <h1>Produtos</h1>
+                <p>Lista de produtos da minha Loja</p>
+            </section>
+            <form method="get">
+                <label for="idnome">Produto</label> <br>
+                <input type="text" name="nome" id="idnome" placeholder="Nome do produto"> <br>
+                <label for="idvalor">Preço</label> <br>
+                <input type="number" name="valor" id="idvalor" placeholder="Valor do produto"> <br>
+                <button id="salvar">Salvar</button>
+                <button id="cancelar">Cancelar</button>
+            </form>
+            <table id="tabela">
+                <tr id="cabeca">
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </table>
+        </nav>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
